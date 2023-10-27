@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 void	ft_print_header(void)
 {
@@ -36,9 +38,12 @@ int	main(void)
 	int	shot;
 	int	lifes;
 	int	points;
+	int segundos = time(0);
 
-	secret_number = 85;
-	lifes = 5;
+	srand(segundos);
+	secret_number = rand();
+	secret_number %= 100;
+	lifes = 10;
 	points = 1000;
 	ft_print_header();
 	while (lifes--)
