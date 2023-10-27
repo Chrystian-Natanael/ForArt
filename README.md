@@ -1,1 +1,1 @@
-# ForArt
+# For fun
